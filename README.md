@@ -1,6 +1,59 @@
 # Podcast Media Downloader
 
-Podcast Media Downloader 是一个 Chrome 插件，用于自动检测和下载网页中的播客媒体文件（MP3 和 M4A）。
+### Overview
+
+This Chrome extension, named **Podcast Media Downloader**, is designed to automatically detect and download podcast media files (MP3 and M4A) when you visit web pages containing such media. The extension consists of background scripts to handle network requests, content scripts to capture user actions, and a popup interface to manage and initiate downloads.
+
+### Features
+
+1. **Automatic Detection:** Automatically detects MP3 and M4A files from web requests.
+2. **Storage and Retrieval:** Stores detected media URLs and metadata (like file names and sizes) in Chrome's local storage.
+3. **User Interaction:** Provides a popup interface for users to view and download detected media files.
+4. **User Actions:** Monitors user actions (clicks and keypresses) to trigger media URL updates.
+5. **Automatic Reset:** Resets the stored media URLs and metadata when the tab changes or the extension is restarted.
+
+### Installation
+
+1. Clone or download the repository.
+2. Open Chrome and navigate to `chrome://extensions/`.
+3. Enable "Developer mode" in the top right corner.
+4. Click "Load unpacked" and select the directory containing the extension files.
+
+### Usage
+
+1. Visit any webpage containing MP3 or M4A files.
+2. The extension will automatically detect and list these files.
+3. Open the extension popup by clicking on the extension icon in the Chrome toolbar.
+4. View the detected files and click the "Download" button to download the desired media files.
+
+### Files
+
+#### `background.js`
+
+- Manages media URL detection and storage.
+- Listens to network requests and response headers to detect media files.
+- Handles user actions to trigger URL updates.
+- Provides functions to reset and initialize the stored data.
+
+#### `content.js`
+
+- Listens to user actions (clicks and keypresses) on the webpage.
+- Sends messages to the background script to handle these actions.
+
+#### `popup.html`
+
+- Provides the user interface for the extension popup.
+- Displays the list of detected media files and allows users to download them.
+
+#### `popup.js`
+
+- Manages the interaction within the popup.
+- Loads and displays the parsed media file names and URLs.
+- Handles the download process and updates the UI accordingly.
+
+# 博客文件下载工具 Podcast Media Downloader
+
+博客文件下载工具 Podcast Media Downloader 是一个 Chrome 插件，用于自动检测和下载网页中的播客媒体文件（MP3 和 M4A）。
 
 ## 功能
 
@@ -29,4 +82,3 @@ Podcast Media Downloader 是一个 Chrome 插件，用于自动检测和下载�
 ## 许可证
 
 本项目基于 MIT 许可证，详情请参见 `LICENSE` 文件。
-
