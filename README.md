@@ -10,7 +10,7 @@ Podcast Media Downloader 是一个 Chrome 插件，用于自动检测和下载�
 
 ## 安装
 
-1. 从 [Releases](https://github.com/your-username/your-repo-name/releases) 页面下载最新版本的 `PodcastMediaDownloader.crx` 文件。
+1. 从 [Releases](https://github.com/whisxixi/podcastMediaDownloder/releases) 页面下载最新版本的 `PodcastMediaDownloader.crx` 文件。
 2. 打开 Chrome 浏览器，进入 `chrome://extensions/` 页面。
 3. 打开“开发者模式”。
 4. 将 `PodcastMediaDownloader.crx` 文件拖拽到扩展程序页面中进行安装。
