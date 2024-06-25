@@ -51,6 +51,11 @@ This Chrome extension, named **Podcast Media Downloader**, is designed to automa
 - Loads and displays the parsed media file names and URLs.
 - Handles the download process and updates the UI accordingly.
 
+### Conclusion
+The Podcast Media Downloader Chrome extension simplifies the process of detecting and downloading podcast media files. With automatic detection, user action monitoring, and a user-friendly interface, it provides a seamless experience for users looking to save their favorite podcasts.
+
+For more details, you can refer to the source code and explore the functionalities in-depth. Contributions and improvements are welcome!
+
 # 播客文件下载工具 Podcast Media Downloader
 
 播客文件下载工具 Podcast Media Downloader 是一个 Chrome 插件，用于自动检测和下载网页中的播客媒体文件（MP3 和 M4A）。
